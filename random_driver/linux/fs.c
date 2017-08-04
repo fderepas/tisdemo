@@ -14,7 +14,7 @@ void printk(char*s,...) {
   return;
 }
 int unregister_chrdev(unsigned int major, const char *name) {
-  return tis_interval(-10,10);
+  return 0;
 }
 void put_user(unsigned char s, void*p) {
   return;
