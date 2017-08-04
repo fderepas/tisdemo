@@ -1,5 +1,4 @@
 #include <linux/fs.h>
-#include <tis_builtin.h>
 
 struct file_operations global_file_ops;
 
@@ -9,7 +8,7 @@ int register_chrdev
  struct file_operations*ops)
 {
   global_file_ops=*ops;
-  return tis_interval(-10,10);
+  return 1;
 }
 void printk(char*s,...) {
   return;
